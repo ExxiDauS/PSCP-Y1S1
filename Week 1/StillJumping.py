@@ -1,0 +1,2 @@
+"""StillJumping"""
+print(input())

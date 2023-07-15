@@ -1,0 +1,2 @@
+"""Entryway"""
+print("Output")
