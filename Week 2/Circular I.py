@@ -1,7 +1,7 @@
-"""Point in Circle"""
+"""Circular I"""
 
 def main():
-    """PointInCircle"""
+    """Circular I"""
     numx = float(input())
     numy = float(input())
     numr = float(input())
@@ -9,7 +9,7 @@ def main():
     numyn = float(input())
     cal = ((numxn-numx)**2+(numyn-numy)**2)**0.5
     if cal <= numr:
-        print("True")
+        print("Yes")
     else:
-        print("False")
+        print("No")
 main()
