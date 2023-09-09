@@ -4,8 +4,10 @@ def coke(price, bottlecap, new_price, require):
     'donut but coke'
     if bottlecap == 0:
         pay = price * require
+        #case 0
+    elif require == 0:
+        pay = 0
     else:
-        #case 15 ????
         trade_bottle = require // bottlecap
         if require % bottlecap == 0:
             trade_bottle -= 1

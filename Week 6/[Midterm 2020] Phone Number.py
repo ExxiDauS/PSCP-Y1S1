@@ -2,44 +2,16 @@
 
 def phone(phonenum, checkinter):
     'international'
-    count_in_loop = 0
     if len(phonenum) == 9:
         if checkinter == "Domestic":
-            for countcheck in phonenum:
-                if count_in_loop % 4 == 0:
-                    print(countcheck, end=" " )
-                else:
-                    print(countcheck, end="")
-                count_in_loop += 1
+            #0 1234 4567
+            print(phonenum[0], phonenum[1:5], phonenum[5:9])
         if checkinter == "International":
-            for countcheck in phonenum:
-                if count_in_loop % 4 == 0:
-                    print(countcheck, end=" ")
-                else:
-                    print(countcheck, end="")
-                count_in_loop += 1
+            print('+66', phonenum[1:5], phonenum[5:9])
     elif len(phonenum) == 10:
         if checkinter == "Domestic":
-            for countcheck in phonenum:
-                if count_in_loop == 0:
-                    print(countcheck, end="")
-                elif count_in_loop == 1:
-                    print(countcheck, end=" ")
-                elif count_in_loop % 5 == 0:
-                    print(countcheck, end=" ")
-                else:
-                    print(countcheck, end="")
-                count_in_loop += 1
+            #08 1234 5678
+            print(phonenum[0:2], phonenum[2:6], phonenum[6:10])
         if checkinter == "International":
-            for countcheck in phonenum:
-                if count_in_loop == 0:
-                    print("+66", end="")
-                elif count_in_loop == 1:
-                    print(countcheck, end=" ")
-                elif count_in_loop % 5 == 0:
-                    print(countcheck, end=" ")
-                else:
-                    print(countcheck, end="")
-                count_in_loop += 1
-                
+            print('+66'+phonenum[1:2], phonenum[2:6], phonenum[6:10])
 phone(str(input()), str(input()))
