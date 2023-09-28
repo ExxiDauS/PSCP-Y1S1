@@ -1,4 +1,4 @@
-"""Stair"""
+"""Stamps"""
 
 def main():
     """Stair"""

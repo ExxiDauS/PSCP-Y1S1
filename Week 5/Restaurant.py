@@ -1,4 +1,4 @@
-"""Run Length Decoding"""
+"""Restaurant"""
 
 def main():
     """RuleofThree"""

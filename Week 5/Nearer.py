@@ -1,17 +1,14 @@
 """Nearer"""
 
-
-def icecream(alice, bob, lct):
-    """check near"""
-    distancealice = abs(lct - alice)
-    distancebob = abs(lct - bob)
-    # have to minus original
-    if distancealice > distancebob:
-        print("Bob", int(abs(lct - bob)))
-    elif distancebob > distancealice:
-        print("Alice", int(abs(lct - alice)))
+def main():
+    """Nearer"""
+    alice = int(input())
+    bob = int(input())
+    ice = int(input())
+    if abs(alice - ice) < abs(bob - ice):
+        print("Alice", abs(alice - ice))
+    elif abs(alice - ice) > abs(bob - ice):
+        print("Bob", abs(bob - ice))
     else:
-        print("Sundaes", int(abs(min(alice, bob))))
-
-
-icecream(float(input()), float(input()), float(input()))
+        print("Sundaes", abs(alice - ice))
+main()

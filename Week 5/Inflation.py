@@ -1,10 +1,10 @@
 """Inflation"""
 
-def year(price, year):
-    'check for year'
+def main():
+    """Inflation"""
+    money = int(float(input())*100)
+    year = int(input())
     for _ in range(year):
-        price += price * (3.81 / 100)
-    check = str(price).find(".")
-    print("%.2f" % float(str(price)[:check + 3]))
-
-year(float(input()), int(input()))
+        money = money+((money*381)//10000)
+    print("%d.%02d" % (money//100, money%100))
+main()

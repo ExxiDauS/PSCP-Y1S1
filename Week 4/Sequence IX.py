@@ -1,6 +1,7 @@
-"""Sequence VIII"""
+"""Sequence IX"""
+
 def main():
-    """Sequence VIII"""
+    """Sequence IX"""
     row = int(input())
     for i in range(0, row):
         num = 1
@@ -10,5 +11,11 @@ def main():
             j = j
             print("%02d" %num, end=" ")
             num += 1
+        if i != 0:
+            num = i
+            for j in range(0, i):
+                j = j
+                print("%02d" %num, end=" ")
+                num -= 1
         print("\r")
 main()
